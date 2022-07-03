@@ -4,7 +4,7 @@ const PORT = 8080;
 (async () => {
   const laptops = await require("./laptops");
 
-  app.get("/lenovos", (req, res) => {
+  app.get("/", (req, res) => {
     res.status(200).send(laptops);
   });
 
